@@ -6,16 +6,16 @@ public class ComputeNumbers : MonoBehaviour
     public Text result;
     public InputField inputField1;
     public InputField inputField2;
-    public Button btn_reset;
-    public Button btn_add_Numbers;
+    public Button resetButton;
+    public Button addButton;
 
     public void SetResult()
     {
         result.text = AddNumbers().ToString();
         inputField1.interactable = false;
         inputField2.interactable = false;
-        btn_add_Numbers.interactable = false;
-        btn_reset.interactable = true;
+        addButton.interactable = false;
+        resetButton.interactable = true;
     }
 
     public void Reset()
@@ -24,8 +24,8 @@ public class ComputeNumbers : MonoBehaviour
         inputField2.text = "0";
         varA.interactable = true;
         inputField2.interactable = true;
-        btn_add_Numbers.interactable = true;
-        btn_reset.interactable = false;
+        addButton.interactable = true;
+        resetButton.interactable = false;
         result.text = "Result";
     }
     private float AddNumbers()
