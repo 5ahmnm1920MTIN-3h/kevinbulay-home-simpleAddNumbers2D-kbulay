@@ -11,9 +11,12 @@ public class ComputeNumbers : MonoBehaviour
 
     public void SetResult()
     {
+        // set the result from the AddNumbers method
         result.text = AddNumbers().ToString();
+
         inputField1.interactable = false;
         inputField2.interactable = false;
+
         addButton.interactable = false;
         resetButton.interactable = true;
     }
@@ -22,7 +25,7 @@ public class ComputeNumbers : MonoBehaviour
     {
         inputField1.text = "0";
         inputField2.text = "0";
-        varA.interactable = true;
+        inputField1.interactable = true;
         inputField2.interactable = true;
         addButton.interactable = true;
         resetButton.interactable = false;
